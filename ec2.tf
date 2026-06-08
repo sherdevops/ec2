@@ -34,10 +34,3 @@ resource "aws_volume_attachment" "ebs_att" {
   instance_id = aws_instance.web.id
 }
 
-terraform {
-  required_providers {
-    aws = {
-      source = "hashicorp/aws"
-    }
-  }
-}
